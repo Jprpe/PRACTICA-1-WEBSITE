@@ -467,26 +467,26 @@ body{
     color: white;
     margin: 20px;
   }
-  .card:hover{
-        transform: scale(1.08);
-        animation-duration: 0.3s;
-  }
-  .bronze:hover{
+.bronze:hover{
     transform: scale(1.08);
     animation-duration: 0.3s;
+    
 }
 
+.card:hover{
+    transform: scale(1.08);
+    animation-duration: 0.3s;
+
+}
 .blue:hover{
         transform: scale(2.1);
-        -webkit-transform: rotate(360deg);
+        -webkit-transform: rotateY(360deg);
+        transition: transform 0.5s ease;
     }
     
-.card:hover button{
+button:hover {
     border:2px;
     }
-    .bronze:hover button{
-    border: 2px;
-        }
-
 }
+
 
