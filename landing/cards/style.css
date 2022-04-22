@@ -1,0 +1,184 @@
+
+*{ 
+    padding: 0px;
+    margin:0 px;
+    box-sizing: border-box;
+    font-family: 'Oswald', sans-serif; 
+}
+
+
+
+
+body{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    flex-wrap: wrap;
+}
+
+p .title {
+    font-size: 1.25rem;
+    padding-top: 20px;
+    color:  #d12525 ;
+    background-color: #313131 ;
+    display: block;
+    justify-content: space-around;
+    text-align: center;
+    font-weight: 100;
+    }
+    .card{
+    position: relative;
+    width: 350px;
+    height: 200px;
+    margin: 20px;
+    
+}
+.ibiza{
+    position: relative;
+    width: 350px;
+    height: 200px;
+    margin: 20px;   
+}
+
+.card .face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: 0.8s;
+}
+
+.ibiza .face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: 0.8s;
+}
+
+.card .front {
+    transform: perspective(600px) rotateY(0deg);
+    box-shadow: 0px 5px 10px #000;
+}
+
+.ibiza .front {
+    transform: perspective(600px) rotateX(0deg);
+    box-shadow: 0px 5px 10px #000;
+}
+ .card .front img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+ .ibiza .front img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card .front h3{
+    position: absolute;
+    width: 100%;
+    font-weight: 300;
+    height: 45px;
+    letter-spacing: 5px;
+    font-size: 2rem;
+    line-height: 45px;
+    color: #fff;
+    text-shadow: 4px 4px 2px rgba(150, 150, 150, 1);
+    text-align: center;
+}
+
+ .ibiza .front h3{
+    position: absolute;
+    width: 100%;
+    font-weight: 300;
+    height: 45px;
+    font-size: 2rem;
+    letter-spacing: 5px;
+    line-height: 45px;
+    color: #fff;
+    text-shadow: 4px 4px 2px rgba(150, 150, 150, 1);
+    text-align: center;
+
+}
+
+.card .back {
+    transform: perspective(600px) rotateY(180deg);
+    background: #313131;
+    color: #f3f3f3;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    box-shadow: 0 5px 10px #000;
+}
+
+ .ibiza .back {
+    transform: perspective(600px) rotateX(180deg);
+    background: #313131;
+    color: #f3f3f3;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    box-shadow: 0 5px 10px #000;
+}
+
+
+ .card .back h4 {
+    font-size: 1.25rem;
+    font-weight: lighter;
+    margin-top: 25px;
+    margin-bottom: 12px;
+    letter-spacing: 2px;
+    color: #ffffff;
+}
+
+ .ibiza .back h4 {
+    font-size: 1.25rem;
+    font-weight: lighter;
+    margin-top: 25px;
+    margin-bottom:12px;
+    letter-spacing: 2px;
+    color: #ffffff;
+
+}
+
+ .card .back p {
+    letter-spacing: 1px;
+    color:#999999;
+    padding: 10px;
+    text-align: center;
+}
+
+.ibiza .back p{
+    letter-spacing: 1px;
+    text-align: center;
+    color:#999999;
+    padding: 16px;
+
+
+}
+
+ .card:hover .front {
+    transform: perspective(600px) rotateY(180deg);
+}
+
+.ibiza:hover .front{
+    transform: perspective(600px) rotateX(180deg);
+
+}
+.card:hover .back {
+    transform: perspective(600px) rotateY(360deg);
+}
+
+.ibiza:hover .back{
+    transform: perspective(600px) rotateX(360deg);
+}
