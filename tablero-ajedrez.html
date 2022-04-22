@@ -7,50 +7,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ajedrez</title>
     <link rel="stylesheet" href="tablero-ajedrez.css">
+    <link rel="stylesheet" href="header.css">
 </head>
 
 <body>
 
     <header>
-        <input type="checkbox" id="checkbox1" class="checkbox1 icon-menu">
+        <input type="checkbox" id="checkbox1" class="checkbox1 icon-menu" hidden>
+
+        <label for="checkbox1" class="icon-menu">
+            <div class="hamburger hamburger1">
+                <span class="bar bar1"></span>
+                <span class="bar bar2"></span>
+                <span class="bar bar3"></span>
+                <span class="bar bar4"></span>
+            </div>
+        </label>
 
         <div class="logo-menu">
 
             <div class="logo"></div>
 
-            <!-- <input type="checkbox" id="checkbox1" class="checkbox1 visualHamburger">
-            <label for="checkbox1">
-                <div class="hamburger hamburger1">
-                    <span class="bar bar1"></span>
-                    <span class="bar bar2"></span>
-                    <span class="bar bar3"></span>
-                    <span class="bar bar4"></span>
-                </div>
-            </label> -->
+            <nav class="menu">
+                <a href="">Home</a>
+                <a href="">Board</a>
+                <a href="">Contacto</a>
+            </nav>
 
-            
-
-                <nav class="menu">
-                    <a href="">Home</a>
-                    <a href="">Board</a>
-                    <a href="">Contacto</a>
-                </nav>
-
-                <div class="redes-sociales">
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                </div>
+            <div class="redes-sociales">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
             </div>
-
         </div>
-
-        </div>
-
-
-
-
     </header>
 
     <div class="container">
@@ -126,8 +116,6 @@
 
         </div>
     </div>
-
-
 
     <footer>Copyright &copy Mi equipo 2022</footer>
 </body>
