@@ -40,3 +40,15 @@ video {
     object-position: center;
     object-fit: cover;
 }
+
+footer {
+    background-color: #000;
+    color: #fff;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 23px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
