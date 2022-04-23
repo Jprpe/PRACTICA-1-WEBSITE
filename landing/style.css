@@ -150,11 +150,11 @@ p .tite {
 
 }
 
- .car .back .playa p {
+ .car .back p {
     letter-spacing: 1px;
-    color:#999999;
-    padding: 10px;
     text-align: center;
+    color:#999999;
+    padding: 16px;
 }
 
 .ibiza .back p{
