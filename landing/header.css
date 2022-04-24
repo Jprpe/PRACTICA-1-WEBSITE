@@ -40,7 +40,8 @@ header {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.menu a:hover {
+.menu a:hover,
+.menu a.active {
     color: #fff;
     background-color: #000;
 }
@@ -113,11 +114,12 @@ header {
     padding: 0;
     width: 30px;
     height: 4px;
-    background-color: black;
+    background-color: #000;
     display: block;
     border-radius: 4px;
     transition: all 0.4s ease-in-out;
     position: absolute;
+    margin: 0;
 }
 
 .bar1 {

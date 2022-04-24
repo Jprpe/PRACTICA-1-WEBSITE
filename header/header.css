@@ -40,7 +40,8 @@ header {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.menu a:hover {
+.menu a:hover,
+.menu a.active {
     color: #fff;
     background-color: #000;
 }
@@ -66,8 +67,6 @@ header {
 }
 
 .redes-sociales>a div {
-    width: 10px;
-    height: 10px;
     margin: 0px 5px;
     padding: 15px;
     border-radius: 50%;
@@ -113,7 +112,7 @@ header {
     padding: 0;
     width: 30px;
     height: 4px;
-    background-color: black;
+    background-color: #000;
     display: block;
     border-radius: 4px;
     transition: all 0.4s ease-in-out;
