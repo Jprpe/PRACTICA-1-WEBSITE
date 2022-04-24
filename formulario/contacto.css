@@ -1,7 +1,10 @@
 * {
     margin : 0px;
-    padding: 10px;
     box-sizing: content-box;
+}
+
+main *{
+ padding: 10px;
 }
 
 body {

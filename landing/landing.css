@@ -1,14 +1,15 @@
 body {
     margin: 0px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 78px 0 78px 0;
 }
 
 .banner {
-    position: fixed;
+    position: relative;
     color: white;
     text-align: center;
     width: 100%;
-    background-color: black;
+    /* background-color: black; */
 }
 
 .banner-text {
