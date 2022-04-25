@@ -10,7 +10,6 @@ main *{
 footer {
     background-color: #000;
     color: #fff;
-    position: fixed;
     bottom: 0;
     width: 100%;
     padding: 16px;
@@ -25,7 +24,7 @@ body {
     background-size: cover;
     color: white;
     text-align: center;  
-    padding: 78px 0;   
+    padding: 78px 0 0 0;   
 }
 
 input[type=submit] {

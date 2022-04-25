@@ -1,7 +1,7 @@
 body {
     margin: 0px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    padding: 78px 0 78px 0;
+    padding: 78px 0 0 0;
 }
 
 .banner {
@@ -45,10 +45,10 @@ video {
 footer {
     background-color: #000;
     color: #fff;
-    position: fixed;
     bottom: 0;
     width: 100%;
     padding: 16px;
+    margin-top: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
