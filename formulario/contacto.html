@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="contacto.css" />
+    <link rel="stylesheet" href="../header/header.css">
+</head>
+
+<body>
+
+    <header>
+        <input type="checkbox" id="checkbox1" class="checkbox1 icon-menu" hidden>
+
+        <label for="checkbox1" class="icon-menu">
+            <div class="hamburger hamburger1">
+                <span class="bar bar1"></span>
+                <span class="bar bar2"></span>
+                <span class="bar bar3"></span>
+                <span class="bar bar4"></span>
+            </div>
+        </label>
+
+        <div class="logo-menu">
+
+            <div class="logo"></div>
+
+            <nav class="menu">
+                <a href="../landing/landing.html">Home</a>
+                <a href="../tablero/tablero-ajedrez.html">Board</a>
+                <a href="../formulario/contacto.html" class="active">Contacto</a>
+            </nav>
+
+            <div class="redes-sociales">
+                <a href="https://es-es.facebook.com" target="blank">
+                    <div></div>
+                </a>
+                <a href="https://twitter.com " target="blank">
+                    <div></div>
+                </a>
+                <a href="https://www.youtube.com" target="blank">
+                    <div></div>
+                </a>
+                <a href="https://www.instagram.com" target="blank">
+                    <div></div>
+                </a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <h1>Formulario de contacto</h1>
+
+        <h2><i>Gracias por tomarte el tiempo para contactar con nosotros y ayudarnos a mejorar</i></h2>
+
+        <form id="survey-form" action="https://www.google.com/" method="get" autocomplete="off">
+            <div class="form-input">
+                <label for="name">Nombre</label>
+                <input id="name" class="form-input-size" type="text" placeholder="Introduce tu nombre" min="5" max="10"
+                    required>
+            </div>
+
+            <div class="form-input">
+                <label for="email">Email</label>
+                <input id="email" class="form-input-size" type="email" placeholder="Introduce tu Email">
+            </div>
+
+            <div class="form-input">
+                <label for="age">Edad</label>
+                <input id="age" class="form-input-size" type="number" min="18" required
+                    placeholder="Introduce tu edad, debes ser mayor de edad">
+            </div>
+
+            <div class="form-input">
+                <label for="rol">¿Qué rol describe mejor tu situación actual?</label>
+                <select name="rol" id="rol" class="form-input-size">
+                    <option value="">Selecciona tu rol actual</option>
+                    <option value="student">Estudiante</option>
+                    <option value="fulltime">Trabajo a tiempo completo</option>
+                    <option value="freelance">Freelance</option>
+                    <option value="searching">Buscando trabajo</option>
+                </select>
+            </div>
+
+            <div class="radio">
+                <p>¿Recomendarías esta página a un conocido?</p>
+                <input type="radio" id="yes" name="recomendation" value="yes" checked>
+                <label for="yes">Sí</label>
+                <input type="radio" id="maybe" name="recomendation" value="maybe">
+                <label for="maybe">Quizá</label>
+                <input type="radio" id="notsure" name="recomendation" value="notsure">
+                <label for="notsure">No estoy seguro</label>
+            </div><br><br>
+
+            <div class="checkbox">
+                <p class="labrador">¿Qué recomendaciones te gustaría recibir? (Marca todas las que apliquen)</p>
+                <div class="choices">
+                    <div>
+                        <input type="checkbox" id="front" name="front">
+                        <label for="front">Proyectos Front-end</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="back" name="back">
+                        <label for="back">Proyectos Back-end</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="social" name="social">
+                        <label for="social">Social Madia (Marketing)</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="tuto" name="tuto">
+                        <label for="tuto">Tutoriales de UX/UI</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="otros" name="otros">
+                        <label for="otros">Otros</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-input">
+                <label for="contact-date">¿Cuándo preferirías que te contactásemos?</label>
+                <input id="contact-date" class="form-input-size" type="datetime-local" min="2022-01-01T00:00" required>
+            </div>
+
+            <div class="form-input">
+                <label for="comment">¿Otros comentarios o sugerencias?</label>
+                <textarea id="story" name="story"> Introduzca sus comentarios...</textarea>
+            </div>
+
+            <div class="form-input">
+                <input type="submit" value="Enviar">
+            </div>
+        </form>
+    </main>
+
+    <footer>Copyright &copy Bryan Judith Irene 2022</footer>
+
+</body>
+
+</html>

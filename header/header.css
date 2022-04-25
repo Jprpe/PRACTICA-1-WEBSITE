@@ -1,0 +1,220 @@
+header {
+    position: fixed;
+    top: 0;
+    border-bottom: 2px solid orange;
+    width: 100%;
+    z-index: 2;
+}
+
+.icon-menu {
+    position: absolute;
+    right: 0;
+}
+
+.logo-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #fff;
+
+}
+
+.logo {
+    content: url(https://rodo593.neocities.org/modulo1/html5css3.svg);
+    width: 100px;
+    margin: 0px 20px;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    margin: 0px 10px;
+}
+
+.menu a {
+    display: flex;
+    text-decoration: none;
+    color: #000;
+    font-size: 1rem;
+    padding: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.menu a:hover,
+.menu a.active {
+    color: #fff;
+    background-color: #000;
+}
+
+#checkbox1[type="checkbox"]:checked + label + .logo-menu {
+    height: 100%;
+}
+
+#checkbox1[type="checkbox"]:not(:checked) + label + .logo-menu .menu {
+    display: none; 
+}
+
+#checkbox1[type="checkbox"]:not(:checked) + label + .logo-menu .redes-sociales {
+    display: none; 
+}
+
+/** redes sociales **/
+
+.redes-sociales {
+    display: flex;
+    justify-content: flex-start;
+    margin: 15px;
+}
+
+.redes-sociales>a div {
+    margin: 0px 5px;
+    padding: 15px;
+    border-radius: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.redes-sociales>a:first-child div {
+    background-image: url(https://www.salou.cat/es/ayuntamiento/el-consistorio/alcalde/destacados/sigueme-en-facebook/view/++widget++form.widgets.ILeadImage.image/@@download/logo-facebook.png);
+    background-size: 124%;    
+}
+
+.redes-sociales>a:nth-child(2) div {
+    background-image: url(https://i0.wp.com/hipertextual.com/wp-content/uploads/2012/06/twitter-bird-white-on-blue.jpg?w=300&quality=50&strip=all&ssl=1);
+    background-size: 102%;
+}
+
+.redes-sociales>a:nth-child(3) div {
+    background-image: url(https://img2.freepng.es/20190715/ah/kisspng-logo-denver-small-moves-llc-font-youtube-social-me-5d2c5b30c29be1.9123589215631880167971.jpg);
+    background-size: 150%;
+}
+
+.redes-sociales>a:last-child div {
+    background-image: url(https://icones.pro/wp-content/uploads/2021/02/instagram-icone-logo.png);
+    background-size: 116%;
+}
+
+.redes-sociales>a div:hover {
+    transform: scale(1.2);
+    transition: 0.25 ease-out;
+}
+
+/** menu hamburgesa **/
+
+.hamburger {
+    margin: 20px;
+    width: 30px;
+    height: 30px;
+    position: relative;
+}
+
+.hamburger .bar {
+    padding: 0;
+    width: 30px;
+    height: 4px;
+    background-color: #000;
+    display: block;
+    border-radius: 4px;
+    transition: all 0.4s ease-in-out;
+    position: absolute;
+}
+
+.bar1 {
+    top: 0;
+}
+
+.bar2,
+.bar3 {
+    top: 13.5px;
+}
+
+.bar3 {
+    right: 0;
+}
+
+.bar4 {
+    bottom: 0;
+}
+
+.checkbox1:checked+label>.hamburger1>.bar1 {
+    transform: rotate(45deg);
+    transform-origin: 5%;
+    width: 41px
+}
+
+.checkbox1:checked+label>.hamburger1>.bar2 {
+    transform: translateX(-40px);
+    background-color: transparent;
+}
+
+.checkbox1:checked+label>.hamburger1>.bar3 {
+    transform: translateX(40px);
+    background-color: transparent;
+}
+
+.checkbox1:checked+label>.hamburger1>.bar4 {
+    transform-origin: 5%;
+    transform: rotate(-45deg);
+    width: 41px;
+}
+
+@media (min-width: 1025px) and (max-width: 1440px){
+    .icon-menu {
+        display: none;
+    }
+    
+    .logo-menu {
+        flex-direction: row;
+    }
+
+    .menu {
+        display: flex !important;
+        flex-direction: row;
+        text-transform: uppercase;
+        align-items: center;
+    }
+
+    .menu a{
+        margin: 0px 5px;
+        padding: 15px 8px;
+    }
+
+    .menu a:hover{
+        transform: scale(1.2);
+        transition: 0.25 ease-out;
+        padding: 18px 6px;
+    }
+
+    .redes-sociales{
+        display: flex !important;
+        align-items: center;
+    }
+}
+
+@media (min-width: 1441px) {
+    .icon-menu {
+        display: none;
+    }
+
+    .logo-menu {
+        flex-direction: row;
+    }
+
+    .menu {
+        display: flex !important;
+        flex-direction: row;
+    }
+
+    .menu a:hover{
+        transform: scale(1.2);
+        transition: 0.25 ease-out;
+        padding: 18px 6px;
+    }
+
+    .redes-sociales{
+        display: flex !important;
+        align-items: center;
+    }
+
+
+}
